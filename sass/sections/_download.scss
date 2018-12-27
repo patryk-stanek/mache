@@ -1,13 +1,13 @@
 .download {
     @include section-padding;
     position: relative;
-}
 
-.download__img {
-    width: 120%;
-    transform: translateX(-20%);
-}
+    &__img {
+        width: 120%;
+        transform: translateX(-20%);
+    }
 
-.download__text {
-    float: right;
+    &__text {
+        float: right;
+    }
 }

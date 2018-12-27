@@ -1,6 +1,10 @@
 .heading-1 {
     font-size: 48px;
     text-transform: uppercase;
+
+    @include respond(break-xl) {
+        font-size: 45px;
+    }
 }
 
 .heading-2,
@@ -35,4 +39,14 @@
 
 .heading-3::after {
     margin: 30px 0;
+}
+
+.u-paragraph {
+    font-size: 15px;
+    color: $color-grey-3;
+    line-height: 30px;
+
+    @include respond(break-xl) {
+        line-height: 25px;
+    }
 }

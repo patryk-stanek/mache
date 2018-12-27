@@ -1,21 +1,21 @@
 .icons {
     color: $color-grey-3;
     @include section-padding;
-}
 
-.icons__flex {
-    display: flex;
-    align-items: flex-start;
-}
+    &__flex {
+        display: flex;
+        align-items: flex-start;
+    }
 
-.icons__icon {
-    font-size: 60px;
-    float: left;
-    width: 30%;
-    text-align: center;
-}
+    &__icon {
+        font-size: 60px;
+        float: left;
+        width: 30%;
+        text-align: center;
+    }
 
-.icons__box {
-    float: right;
-    width: 70%;
+    &__box {
+        float: right;
+        width: 70%;
+    }
 }
