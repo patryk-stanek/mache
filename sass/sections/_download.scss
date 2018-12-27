@@ -2,9 +2,18 @@
     @include section-padding;
     position: relative;
 
+    @include respond(break-m) {
+        text-align: center;
+    }
+
     &__img {
         width: 120%;
         transform: translateX(-20%);
+
+        @include respond(break-xl) {
+            width: 100%;
+            transform: translateX(0);
+        }
     }
 
     &__text {

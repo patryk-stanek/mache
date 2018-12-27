@@ -11,5 +11,9 @@
         line-height: 120px;
         font-size: 62px;
         margin: 70px 0 35px 0;
+
+        @include respond(break-s) {
+            margin: 10px 0;
+        }
     }
 }

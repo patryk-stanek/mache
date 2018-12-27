@@ -9,5 +9,19 @@
 
     & .btn {
         margin-left: 25px;
+
+        @include respond(break-m) {
+            display: block;
+            margin-left: 0;
+            margin: 10px 50px;
+        }
+    }
+
+    @include respond(break-xl) {
+        font-size: 32px;
+    }
+
+    @include respond(break-l) {
+        font-size: 25px;
     }
 }

@@ -2,6 +2,10 @@
     text-align: center;
     padding-top: 100px;
 
+    @include respond(break-xl) {
+        padding-top: 50px;
+    }
+
     &__link:link,
     &__link:visited {
         text-decoration: none;
@@ -12,9 +16,11 @@
         display: block;
     }
 
-    &__link:hover &__icon,
-    &__link:active &__icon {
-        transform: rotate(90deg) translate(5px, -2px);
+    @include respond(hover) {
+        &__link:hover &__icon,
+        &__link:active &__icon {
+            transform: rotate(90deg) translate(5px, -2px);
+        }
     }
 
     &__icon {

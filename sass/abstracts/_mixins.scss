@@ -54,4 +54,8 @@
 
 @mixin section-padding-small {
     padding: 50px 0;
+
+    @include respond(break-s) {
+        padding: 50px 5px;
+    }
 }

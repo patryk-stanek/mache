@@ -2,6 +2,10 @@
     height: 75vh;
     position: relative;
 
+    @include respond(break-m) {
+        height: 100vh;
+    }
+
     &__box {
         text-align: center;
         color: $color-white;
@@ -14,5 +18,25 @@
         font-size: 21px;
         line-height: 33px;
         margin-bottom: 70px;
+
+        @include respond(break-xl) {
+            font-size: 19px;
+            line-height: 30px;
+        }
+
+        @include respond(break-l) {
+            font-size: 17px;
+            line-height: 25px;
+        }
+
+        @include respond(break-m) {
+            font-size: 15px;
+        }
+
+        @include respond(break-s) {
+            font-size: 13px;
+            margin-bottom: 30px;
+            line-height: 20px;
+        }
     }
 }

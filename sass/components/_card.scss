@@ -10,9 +10,11 @@
         @include transition;
     }
 
-    &:hover > &__price,
-    &:active > &__price {
-        background-color: $color-primary;
+    @include respond(hover) {
+        &:hover > &__price,
+        &:active > &__price {
+            background-color: $color-primary;
+        }
     }
 
     &__value {

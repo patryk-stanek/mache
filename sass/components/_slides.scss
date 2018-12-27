@@ -1,9 +1,23 @@
 .slides {
     margin: 20px 10px;
 
+    @include respond(break-l) {
+        height: 20vh;
+    }
+
+    @include respond(break-s) {
+        height: 30vh;
+    }
+
     &__container {
         background-color: $color-primary;
         position: relative;
+
+        @include respond(break-l) {
+            float: left;
+            width: 40%;
+            height: auto;
+        }
     }
 
     &__icon {
@@ -15,9 +29,11 @@
         @include transition;
     }
 
-    &:hover &__icon,
-    &:active &__icon {
-        display: block;
+    @include respond(hover) {
+        &:hover &__icon,
+        &:active &__icon {
+            display: block;
+        }
     }
 
     &__img {
@@ -27,12 +43,22 @@
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
         object-fit: cover;
         @include transition;
+
+        @include respond(break-l) {
+            height: 20vh;
+        }
+
+        @include respond(break-s) {
+            height: 30vh;
+        }
     }
 
-    &:hover &__img,
-    &:active &__img {
-        opacity: .2;
-        clip-path: none;
+    @include respond(hover) {
+        &:hover &__img,
+        &:active &__img {
+            opacity: .2;
+            clip-path: none;
+        }
     }
 
     &__text {
@@ -42,6 +68,12 @@
 
         & .heading-4 {
             color: $color-grey-3;
+        }
+
+        @include respond(break-l) {
+            float: left;
+            width: 60%;
+            height: 100%;
         }
     }
 }

@@ -7,6 +7,14 @@
 .u-text-box {
     padding: 0 200px;
     margin-bottom: 50px;
+
+    @include respond(break-l) {
+        padding: 0 100px;
+    }
+
+    @include respond(break-m) {
+        padding: 0 50px;
+    }
 }
 
 .u-thin {

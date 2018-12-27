@@ -336,6 +336,24 @@ button:focus {
   }
 }
 
+@media only screen and (max-width: 991px) {
+  .heading-1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .heading-1 {
+    font-size: 37px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .heading-1 {
+    font-size: 30px;
+  }
+}
+
 .heading-2,
 .heading-3 {
   color: #909090;
@@ -343,6 +361,13 @@ button:focus {
   font-weight: 300;
   font-size: 42px;
   letter-spacing: -2px;
+}
+
+@media only screen and (max-width: 576px) {
+  .heading-2,
+  .heading-3 {
+    font-size: 27px;
+  }
 }
 
 .heading-4 {
@@ -370,6 +395,12 @@ button:focus {
   margin: 30px 0;
 }
 
+@media only screen and (max-width: 767px) {
+  .heading-3::after {
+    margin: 30px auto;
+  }
+}
+
 .u-paragraph {
   font-size: 15px;
   color: #909090;
@@ -382,6 +413,13 @@ button:focus {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .u-paragraph {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
 .u-background-image {
   background-image: linear-gradient(to right bottom, #000000, #00000099), url(https://images.unsplash.com/photo-1474204075013-fafcfee9bfd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=74860acfad97bd38d539a4a660fc8b31&auto=format&fit=crop&w=2125&q=80);
   background-size: cover;
@@ -391,6 +429,18 @@ button:focus {
 .u-text-box {
   padding: 0 200px;
   margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 991px) {
+  .u-text-box {
+    padding: 0 100px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .u-text-box {
+    padding: 0 50px;
+  }
 }
 
 .u-thin {
@@ -416,10 +466,12 @@ button:focus {
   border: 1px solid #ed145b;
 }
 
-.btn__pink:hover, .btn__pink:active {
-  background-color: #ffffff;
-  color: #ed145b;
-  border: 1px solid #ed145b;
+@media only screen and (min-width: 1200px) {
+  .btn__pink:hover, .btn__pink:active {
+    background-color: #ffffff;
+    color: #ed145b;
+    border: 1px solid #ed145b;
+  }
 }
 
 .btn__white {
@@ -429,11 +481,13 @@ button:focus {
   vertical-align: middle;
 }
 
-.btn__white:hover, .btn__white:active {
-  background-color: #ed145b;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  padding: 12px 50px;
+@media only screen and (min-width: 1200px) {
+  .btn__white:hover, .btn__white:active {
+    background-color: #ed145b;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 50px;
+  }
 }
 
 .card {
@@ -449,9 +503,11 @@ button:focus {
   transition: all .2s ease-out;
 }
 
-.card:hover > .card__price,
-.card:active > .card__price {
-  background-color: #ed145b;
+@media only screen and (min-width: 1200px) {
+  .card:hover > .card__price,
+  .card:active > .card__price {
+    background-color: #ed145b;
+  }
 }
 
 .card__value {
@@ -522,6 +578,19 @@ button:focus {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .nav {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .nav {
+    padding: 10px 0;
+  }
+}
+
 .nav__logo {
   font-weight: 900;
   font-size: 22px;
@@ -538,6 +607,19 @@ button:focus {
   float: right;
 }
 
+@media only screen and (max-width: 576px) {
+  .nav__list {
+    float: none;
+    padding: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .nav__item {
   display: inline-block;
   font-size: 15px;
@@ -548,14 +630,22 @@ button:focus {
   margin-right: 10px;
 }
 
+@media only screen and (max-width: 576px) {
+  .nav__item {
+    margin-top: 5px;
+  }
+}
+
 .nav__link:link, .nav__link:visited {
   text-decoration: none;
   color: #ffffff;
   transition: all .2s ease-out;
 }
 
-.nav__link:link:hover, .nav__link:link:active, .nav__link:visited:hover, .nav__link:visited:active {
-  color: #ed145b;
+@media only screen and (min-width: 1200px) {
+  .nav__link:link:hover, .nav__link:link:active, .nav__link:visited:hover, .nav__link:visited:active {
+    color: #ed145b;
+  }
 }
 
 .nav__current-page:link, .nav__current-page:visited {
@@ -566,9 +656,29 @@ button:focus {
   margin: 20px 10px;
 }
 
+@media only screen and (max-width: 991px) {
+  .slides {
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .slides {
+    height: 30vh;
+  }
+}
+
 .slides__container {
   background-color: #ed145b;
   position: relative;
+}
+
+@media only screen and (max-width: 991px) {
+  .slides__container {
+    float: left;
+    width: 40%;
+    height: auto;
+  }
 }
 
 .slides__icon {
@@ -583,9 +693,11 @@ button:focus {
   transition: all .2s ease-out;
 }
 
-.slides:hover .slides__icon,
-.slides:active .slides__icon {
-  display: block;
+@media only screen and (min-width: 1200px) {
+  .slides:hover .slides__icon,
+  .slides:active .slides__icon {
+    display: block;
+  }
 }
 
 .slides__img {
@@ -599,11 +711,25 @@ button:focus {
   transition: all .2s ease-out;
 }
 
-.slides:hover .slides__img,
-.slides:active .slides__img {
-  opacity: .2;
-  -webkit-clip-path: none;
-          clip-path: none;
+@media only screen and (max-width: 991px) {
+  .slides__img {
+    height: 20vh;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .slides__img {
+    height: 30vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .slides:hover .slides__img,
+  .slides:active .slides__img {
+    opacity: .2;
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
 }
 
 .slides__text {
@@ -614,6 +740,14 @@ button:focus {
 
 .slides__text .heading-4 {
   color: #909090;
+}
+
+@media only screen and (max-width: 991px) {
+  .slides__text {
+    float: left;
+    width: 60%;
+    height: 100%;
+  }
 }
 
 .download {
@@ -639,9 +773,22 @@ button:focus {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .download {
+    text-align: center;
+  }
+}
+
 .download__img {
   width: 120%;
   transform: translateX(-20%);
+}
+
+@media only screen and (max-width: 1200px) {
+  .download__img {
+    width: 100%;
+    transform: translateX(0);
+  }
 }
 
 .download__text {
@@ -655,9 +802,21 @@ button:focus {
   padding: 50px 0;
 }
 
+@media only screen and (max-width: 576px) {
+  .footer {
+    padding: 50px 5px;
+  }
+}
+
 .header {
   height: 75vh;
   position: relative;
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 100vh;
+  }
 }
 
 .header__box {
@@ -676,6 +835,34 @@ button:focus {
   font-size: 21px;
   line-height: 33px;
   margin-bottom: 70px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header__text {
+    font-size: 19px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .header__text {
+    font-size: 17px;
+    line-height: 25px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header__text {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header__text {
+    font-size: 13px;
+    margin-bottom: 30px;
+    line-height: 20px;
+  }
 }
 
 .icons {
@@ -730,8 +917,34 @@ button:focus {
   padding: 50px 0;
 }
 
+@media only screen and (max-width: 576px) {
+  .join {
+    padding: 50px 5px;
+  }
+}
+
 .join .btn {
   margin-left: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+  .join .btn {
+    display: block;
+    margin-left: 0;
+    margin: 10px 50px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .join {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .join {
+    font-size: 25px;
+  }
 }
 
 .more {
@@ -790,6 +1003,12 @@ button:focus {
   padding: 50px 0;
 }
 
+@media only screen and (max-width: 576px) {
+  .quote {
+    padding: 50px 5px;
+  }
+}
+
 .quote__flex {
   display: -ms-flexbox;
   display: flex;
@@ -812,8 +1031,10 @@ button:focus {
   transition: all .2s ease-out;
 }
 
-.quote__arrow:hover, .quote__arrow:active {
-  color: #ffffff;
+@media only screen and (min-width: 1200px) {
+  .quote__arrow:hover, .quote__arrow:active {
+    color: #ffffff;
+  }
 }
 
 .quote__text {
@@ -826,6 +1047,15 @@ button:focus {
   padding: 30px 125px;
 }
 
+@media only screen and (max-width: 767px) {
+  .quote__text {
+    font-size: 18px;
+    padding: 30px 0;
+    line-height: 25px;
+    margin: 0;
+  }
+}
+
 .quote__text::before, .quote__text::after {
   color: #ed145b;
   font-size: 150px;
@@ -833,6 +1063,17 @@ button:focus {
   font-family: 'Times New Roman', Times, serif;
   font-weight: 700;
   padding-top: 60px;
+}
+
+@media only screen and (max-width: 767px) {
+  .quote__text::before, .quote__text::after {
+    color: #ed145b;
+    font-size: 100px;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding-top: 60px;
+  }
 }
 
 .quote__text::before {
@@ -877,9 +1118,21 @@ button:focus {
   margin: 70px 0 35px 0;
 }
 
+@media only screen and (max-width: 576px) {
+  .service__icon {
+    margin: 10px 0;
+  }
+}
+
 .updates {
   text-align: center;
   padding-top: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .updates {
+    padding-top: 50px;
+  }
 }
 
 .updates__link:link, .updates__link:visited {
@@ -891,9 +1144,11 @@ button:focus {
   display: block;
 }
 
-.updates__link:hover .updates__icon,
-.updates__link:active .updates__icon {
-  transform: rotate(90deg) translate(5px, -2px);
+@media only screen and (min-width: 1200px) {
+  .updates__link:hover .updates__icon,
+  .updates__link:active .updates__icon {
+    transform: rotate(90deg) translate(5px, -2px);
+  }
 }
 
 .updates__icon {
@@ -909,6 +1164,12 @@ button:focus {
   position: relative;
   height: auto;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .welcome {
+    text-align: center;
+  }
 }
 
 .welcome::before {
@@ -937,10 +1198,19 @@ button:focus {
       align-items: center;
 }
 
-.welcome__link:hover > .welcome__icon,
-.welcome__link:active > .welcome__icon {
-  color: #ffffff;
-  background-color: #ed145b;
+@media only screen and (max-width: 767px) {
+  .welcome__link:link, .welcome__link:visited {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .welcome__link:hover > .welcome__icon,
+  .welcome__link:active > .welcome__icon {
+    color: #ffffff;
+    background-color: #ed145b;
+  }
 }
 
 .welcome__icon {
@@ -958,5 +1228,18 @@ button:focus {
 .welcome__img {
   width: 120%;
   display: block;
+}
+
+@media only screen and (max-width: 1200px) {
+  .welcome__img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .welcome__img {
+    width: 100%;
+    transform: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

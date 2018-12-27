@@ -19,11 +19,13 @@
         color: $color-white;
         border: 1px solid $color-primary;
 
-        &:hover,
-        &:active {
-            background-color: $color-white;
-            color: $color-primary;
-            border: 1px solid $color-primary;
+        @include respond(hover) {
+            &:hover,
+            &:active {
+                background-color: $color-white;
+                color: $color-primary;
+                border: 1px solid $color-primary;
+            }
         }
     }
 
@@ -33,12 +35,14 @@
         border: 1px solid $color-white;
         vertical-align: middle;
 
-        &:hover,
-        &:active {
-            background-color: $color-primary;
-            color: $color-white;
-            border: 1px solid $color-white;
-            padding: 12px 50px;
+        @include respond(hover) {
+            &:hover,
+            &:active {
+                background-color: $color-primary;
+                color: $color-white;
+                border: 1px solid $color-white;
+                padding: 12px 50px;
+            }
         }
     }
 }

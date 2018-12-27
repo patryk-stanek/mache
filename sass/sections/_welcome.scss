@@ -4,6 +4,10 @@
     height: auto;
     overflow: hidden;
 
+    @include respond(break-m) {
+        text-align: center;
+    }
+
     &::before {
         content: "";
         background-color: $color-primary;
@@ -26,12 +30,18 @@
         font-weight: 700;
         display: flex;
         align-items: center;
+
+        @include respond(break-m) {
+            justify-content: center;
+        }
     }
 
-    &__link:hover > &__icon,
-    &__link:active > &__icon {
-        color: $color-white;
-        background-color: $color-primary;
+    @include respond(hover) {
+        &__link:hover > &__icon,
+        &__link:active > &__icon {
+            color: $color-white;
+            background-color: $color-primary;
+        }
     }
 
     &__icon {
@@ -49,5 +59,14 @@
     &__img {
         width: 120%;
         display: block;
+
+        @include respond(break-xl) {
+            width: 100%;
+        }
+
+        @include respond(break-m) {
+            width: 100%;
+            transform: 0;
+        }
     }
 }
