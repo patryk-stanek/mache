@@ -1,0 +1,53 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == break-xs {
+        @media only screen and (max-width: $break-xs) { @content };
+    }
+    @if $breakpoint == break-s {
+        @media only screen and (max-width: $break-s) { @content };
+    }
+    @if $breakpoint == break-m {
+        @media only screen and (max-width: $break-m) { @content };
+    }
+    @if $breakpoint == break-l {
+        @media only screen and (max-width: $break-l) { @content };
+    }
+    @if $breakpoint == break-xl {
+        @media only screen and (max-width: $break-xl) { @content };
+    }
+    @if $breakpoint == hover {
+        @media only screen and (min-width: $break-xl) { @content };
+    }
+}
+
+@mixin clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin transition {
+    transition: all .2s ease-out;
+}
+
+@mixin section-padding {
+    padding: 12.5rem 0;
+
+    @include respond(break-l) {
+        padding: 10rem 0;
+    }
+
+    @include respond(break-m) {
+        padding: 8rem 0;
+    }
+
+    @include respond(break-s) {
+        padding: 6.5rem 0;
+    }
+}
