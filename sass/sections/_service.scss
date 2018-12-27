@@ -1,0 +1,15 @@
+.service {
+    text-align: center;
+    @include section-padding;
+}
+
+.service__icon {
+    color: $color-grey-3;
+    border: 1px solid $color-grey-3;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    font-size: 62px;
+    margin: 70px 0 35px 0;
+}

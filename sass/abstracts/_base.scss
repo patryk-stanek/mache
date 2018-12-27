@@ -10,3 +10,9 @@ body {
 }
 
 button:focus { outline: 0; }
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}

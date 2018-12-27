@@ -1,0 +1,6 @@
+.footer {
+    background-color: $color-grey-4;
+    text-align: center;
+    color: $color-white;
+    @include section-padding-small;
+}

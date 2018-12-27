@@ -1,0 +1,5 @@
+.prices {
+    text-align: center;
+    background-color: $color-grey-2;
+    @include section-padding;
+}

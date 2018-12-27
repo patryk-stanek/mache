@@ -1,0 +1,45 @@
+.slides {
+    margin: 20px 10px;
+}
+
+.slides__container {
+    background-color: $color-primary;
+    position: relative;
+}
+
+.slides__icon {
+    color: $color-white;
+    font-size: 50px;
+    display: none;
+    z-index: 2;
+    @include center;
+    @include transition;
+}
+
+.slides__img {
+    opacity: 1;
+    width: 100%;
+    filter: grayscale(100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    object-fit: cover;
+    @include transition;
+}
+
+.slides:hover .slides__icon {
+    display: block;
+}
+
+.slides:hover .slides__img {
+    opacity: .2;
+    clip-path: none;
+}
+
+.slides__text {
+    padding: 15px;
+    background-color: $color-grey-2;
+    text-align: left;
+}
+
+.slides__text .heading-4 {
+    color: $color-grey-3;
+}

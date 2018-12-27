@@ -1,0 +1,62 @@
+$grid-columns: 12;
+
+@for $i from 1 through $grid-columns {
+    .col-#{$i} {
+        width: percentage($i / $grid-columns);
+    }
+    .col-offset-#{$i} {
+        width: percentage($i / $grid-columns);
+    }
+}
+
+@media (max-width: $break-xl) {
+    @for $i from 1 through $grid-columns {
+        .col-xl-#{$i} {
+            width: percentage($i / $grid-columns);
+        }
+    }
+}
+
+@media (max-width: $break-l) {
+    @for $i from 1 through $grid-columns {
+        .col-l-#{$i} {
+            width: percentage($i / $grid-columns);
+        }
+    }
+}
+
+@media (max-width: $break-m) {
+    @for $i from 1 through $grid-columns {
+        .col-m-#{$i} {
+            width: percentage($i / $grid-columns);
+        }
+    }
+}
+
+@media (max-width: $break-s) {
+    @for $i from 1 through $grid-columns {
+        .col-s-#{$i} {
+            width: percentage($i / $grid-columns);
+        }
+    }
+}
+
+@media (max-width: $break-xs) {
+    @for $i from 1 through $grid-columns {
+        .col-xs-#{$i} {
+            width: percentage($i / $grid-columns);
+        }
+    }
+}
+
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+    padding: 10px;
+    position: relative;
+}
+
+.row::before,
+.row::after {
+    @include clearfix;
+}

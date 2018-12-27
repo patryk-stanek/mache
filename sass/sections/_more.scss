@@ -1,0 +1,8 @@
+.more {
+    text-align: center;
+    @include section-padding;
+}
+
+.more * {
+    color: $color-white;
+}

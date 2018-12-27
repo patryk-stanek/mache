@@ -1,0 +1,45 @@
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 12px 50px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 200px;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    @include transition;
+}
+
+.btn--pink {
+    background-color: $color-primary;
+    color: $color-white;
+    border: 1px solid $color-primary;
+}
+
+.btn--pink:hover {
+    background-color: $color-white;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+    padding: 12px 55px;
+}
+
+.btn--pink:active {
+    transform: translateY(2px);
+}
+
+.btn--white {
+    background-color: $color-white;
+    color: $color-primary;
+    border: 1px solid $color-white;
+    vertical-align: middle;
+}
+
+.btn--white:hover,
+.btn--white:active {
+    background-color: $color-primary;
+    color: $color-white;
+    border: 1px solid $color-white;
+    padding: 12px 50px;
+}

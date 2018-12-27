@@ -1,0 +1,55 @@
+.quote {
+    position: relative;
+    @include section-padding-small;
+}
+
+.quote__flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quote__arrow {
+    color: rgba($color-white, .9);
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    @include transition;
+}
+
+.quote__arrow:hover,
+.quote__arrow:active {
+    color: $color-white;
+}
+
+.quote__text {
+    font-style: italic;
+    color: rgba($color-white, .9);
+    font-size: 21px;
+    line-height: 35px;
+    font-weight: 300;
+    text-align: center;
+    padding: 30px 125px;
+}
+
+.quote__text::before,
+.quote__text::after {
+    color: $color-primary;
+    font-size: 150px;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding-top: 60px;
+}
+
+.quote__text::before {
+    content: "“";
+}
+
+.quote__text::after {
+    content: "”";
+}

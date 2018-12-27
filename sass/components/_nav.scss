@@ -1,0 +1,50 @@
+.nav {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    font-weight: 900;
+    font-size: 22px;
+    color: $color-white;
+    float: left;
+}
+
+.nav__logo--color {
+    color: $color-primary;
+}
+
+.nav__list {
+    list-style: none;
+    float: right;
+}
+
+.nav__item {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav__link:link,
+.nav__link:visited {
+    text-decoration: none;
+    color: $color-white;
+    @include transition;
+}
+
+.nav__link:hover,
+.nav__link:active {
+    color: $color-primary;
+}
+
+.nav__current-page:link,
+.nav__current-page:visited {
+    color: $color-primary;
+}

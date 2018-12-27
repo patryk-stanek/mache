@@ -1,0 +1,27 @@
+.updates {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.updates__link:link,
+.updates__link:visited {
+    text-decoration: none;
+    color: $color-primary;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 50px 0;
+    display: block;
+}
+
+.updates__icon {
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    font-size: 32px;
+    transform: rotate(90deg) translateY(-2px);
+    @include transition;
+}
+
+.updates__link:hover .updates__icon,
+.udpates__link:hover .updates__icon {
+    transform: rotate(90deg) translate(5px, -2px);
+}
