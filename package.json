@@ -1,6 +1,7 @@
 {
   "name": "mache",
   "version": "1.0.0",
+  "description": "https://patryk-stanek.github.io/mache/",
   "main": "index.js",
   "dependencies": {
     "npm": "^6.5.0"
@@ -35,9 +36,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/patryk-stanek/golden.git"
+    "url": "git+https://github.com/patryk-stanek/mache.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patryk-stanek/mache/issues"
+  },
+  "homepage": "https://github.com/patryk-stanek/mache#readme"
 }
